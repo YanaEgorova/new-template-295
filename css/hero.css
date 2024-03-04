@@ -192,7 +192,7 @@
   }
 
   .policy {
-    padding: 15rem 0;
+    /* padding: 15rem 0; */
   }
   .policy-list {
     flex-direction: row;
