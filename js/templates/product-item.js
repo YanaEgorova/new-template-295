@@ -22,14 +22,19 @@ export const item = product => {
     </div>
     <div class="product__btn-block">
    
-      <a href="product-page.html?id=${product.id}" class="policy-btn btn--first" style="margin: ${
-    product.type == 'ring' || product.type == 'clothing' ? 'auto' : ''
+    
+
+
+         <a href="product-page.html?id=${product.id}" class="policy-btn btn--first" style="margin: ${
+    product.type == 'ring' || product.type == 'clothing' || product.type == 'shoes' ? 'auto' : ''
   }">details <span></span></a>
       ${
-        product.type == 'ring' || product.type == 'clothing'
+        product.type == 'ring' || product.type == 'clothing' || product.type == 'shoes'
           ? ''
           : '<button class="policy-btn js_add-to-cart">buy <span></span></button>'
       }
+
+
     </div>
   </div>
 </li>
